@@ -1,22 +1,23 @@
 {
-  "name": "@pancakeswap/sdk",
+  "name": "@nipplelabs/sdk",
   "license": "MIT",
   "version": "2.3.2",
-  "description": "🛠 An SDK for building applications on top of Pancakeswap.",
+  "description": "🛠 An SDK for building applications on top of NippleFinance.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/pancakeswap/pancakeswap-sdk.git",
+  "repository": "https://github.com/Nipple-Labs/nipplelabs-sdk.git",
   "keywords": [
     "pancakeswap",
+    "nipplelabs",
     "bsc"
   ],
   "module": "dist/sdk.esm.js",
   "scripts": {
     "lint": "tsdx lint src test",
-    "build": "tsdx build",
+    "build": "rimraf ./dist && tsdx build",
     "start": "tsdx watch",
     "test": "tsdx test",
     "prepublishOnly": "tsdx build"
